@@ -9,6 +9,8 @@ TodoList::TodoList() {
             tasks.push_back(line);
         }
         inFile.close();
+    } else {
+        cout << "Your list is empty" << endl;
     }
 }
 

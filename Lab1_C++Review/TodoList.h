@@ -10,7 +10,7 @@
 // #include <iostream>
 // #include <string>
 
-class TodoList: public interface {
+class TodoList: public Interface {
 public:
     // Writes data from TodoList.txt to vector 'tasks'
     TodoList();

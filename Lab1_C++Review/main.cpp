@@ -11,7 +11,7 @@ void helpFull();
 void helpTag();
 
 int main(int argc, char *argv[]) {
-    interface* myList = new TodoList;
+    Interface* myList = new TodoList;
     string date;
     string task;
     string cmdArg = argv[1];

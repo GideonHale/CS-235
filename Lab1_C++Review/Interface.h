@@ -6,13 +6,13 @@
 
 using namespace std;
 
-class interface {
+class Interface {
 public:
     // Writes data from TodoList.txt to vector 'tasks'
-    interface() {}
+    Interface() {}
 
     // Writes date from vector 'tasks' to TodoList.txt
-    virtual ~interface() {}
+    virtual ~Interface() {}
 
     // Adds an item to the todo list with the data specified by the string "_duedate" and the task specified by "_task"
     virtual void add(string _duedate, string _task) = 0;

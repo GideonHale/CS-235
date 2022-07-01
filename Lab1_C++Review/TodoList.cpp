@@ -45,7 +45,7 @@ void TodoList::remove(string _task) {
 }
 
 // Prints out all items of a todo list with a particular due date (specified by _duedate)
-void TodoList::printDay(string _date) {
+void TodoList::printDaysTasks(string _date) {
     bool found = false;
     cout << "Items on " << _date << ":" << endl;
     for (int i = 0; i < tasks.size(); i++) {
@@ -62,7 +62,7 @@ void TodoList::printDay(string _date) {
 }
 
 // Prints out the full todo list to the console
-void TodoList::printList() {
+void TodoList::printTodoList() {
     // char box = \u2610;
     cout << "Printing To-Do List:" << endl;
     for (int i = 0; i < tasks.size(); i++) {

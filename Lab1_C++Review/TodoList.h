@@ -1,7 +1,7 @@
 #ifndef TODO_LIST_H
 #define TODO_LIST_H
 
-#include "TodoListInterface.h"
+#include "Interface.h"
 
 #include <fstream>
 #include <vector>
@@ -10,7 +10,7 @@
 // #include <iostream>
 // #include <string>
 
-class TodoList: public TodoListInterface {
+class TodoList: public interface {
 public:
     // Writes data from TodoList.txt to vector 'tasks'
     TodoList();
@@ -25,10 +25,10 @@ public:
     virtual void remove(string _task);
 
     // Prints out all items of a todo list with a particular due date (specified by _duedate)
-    virtual void printDay(string _date);
+    virtual void printDaysTasks(string _date);
     
     // Prints out the full todo list to the console
-    virtual void printList();
+    virtual void printTodoList();
 
 private:
     vector<string> tasks;

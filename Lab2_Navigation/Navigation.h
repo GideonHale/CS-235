@@ -4,8 +4,19 @@
 #include "Interface.h"
 
 #include <queue>
+#include <fstream>
+#include <string>
 
 using namespace std;
+
+struct Node {
+    int cost;
+    queue<int> path;
+
+    bool operator() (Node const& n1, Node const& n2) {
+        return n1.cost > n2.cost;
+    }
+};
 
 class Navigation : public Interface {
 public:

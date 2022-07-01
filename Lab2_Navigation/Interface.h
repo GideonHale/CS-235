@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <queue>
+#include <vector>
 
 using namespace std;
 
@@ -28,9 +29,10 @@ public:
 
     // prints out to the console the path stored in _path
     virtual void printPath(queue<int> _path) = 0;
+
 protected:
-    string path;
-    string cost;
+    int numNodes;
+    vector< vector<int> > costs;
 };
 
 #endif
